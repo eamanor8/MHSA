@@ -84,6 +84,7 @@ def enrich_time_info(sp):
 
 def get_dataset(config):
     # note: location does not start at 0
+    print(f"Main Dataset Preprocessing")
     gowalla = pd.read_csv(
         os.path.join(config[f"raw_gowalla"], "Gowalla_totalCheckins.txt"),
         sep="\t",
@@ -188,11 +189,11 @@ def get_dataset(config):
     )
 
     # save the valid_ids and dataset
-    data_path = f"./data/valid_ids_gowalla.pk"
+    data_path = f"./small-dataset/valid_ids_gowalla.pk"
     with open(data_path, "wb") as handle:
         pickle.dump(final_valid_id, handle, protocol=pickle.HIGHEST_PROTOCOL)
-    gowalla_afterUser.to_csv(f"./data/dataSet_gowalla.csv", index=False)
-    gowalla_loc.to_csv(f"./data/locations_gowalla.csv", index=False)
+    gowalla_afterUser.to_csv(f"./small-dataset/dataset_gowalla.csv", index=False)
+    gowalla_loc.to_csv(f"./small-dataset/locations_gowalla.csv", index=False)
 
     print("Final user size: ", gowalla_afterUser["user_id"].unique().shape[0])
 
