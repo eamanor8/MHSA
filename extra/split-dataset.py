@@ -2,9 +2,9 @@ import pandas as pd
 from io import StringIO
 
 # Read and truncate the dataset to extract two batches of 5000 unique users
-input_file = './small-dataset/original-Gowalla_totalCheckins.txt'  # Path to the original file
-batch1_output_file = './small-dataset/Gowalla_totalCheckins.txt'  # Path to save the first 5000 users' data
-batch2_output_file = './small-dataset/test-dataset.txt'  # Path to save the second 5000 users' data
+input_file = './sd/gowalla/original-Gowalla_totalCheckins.txt'  # Path to the original file
+batch1_output_file = './sd/gowalla/Gowalla_totalCheckins.txt'  # Path to save the first 5000 users' data
+batch2_output_file = './sd/gowalla/test-dataset.txt'  # Path to save the second 5000 users' data
 
 # Load the dataset
 with open(input_file, 'r') as infile:

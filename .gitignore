@@ -4,8 +4,8 @@ dblogin*
 paths.json
 trained_models/
 outputs/
-sd-outputs/
-small-dataset/
+sd-output/
+term-outputs/
 
 # Mac
 .DS_Store

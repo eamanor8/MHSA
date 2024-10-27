@@ -6,8 +6,8 @@ misc:
   # # 10560 users, ranging from 1 to 10560
   # total_user_num: 10561
   
-  total_loc_num: 3420
-  total_user_num: 315
+  total_loc_num: 150
+  total_user_num: 20
 
   # 
   if_embed_user: True
@@ -19,7 +19,7 @@ misc:
   previous_day: 7
   verbose: True
   debug: False
-  batch_size: 64
+  batch_size: 10 #64
   print_step: 10
   num_workers: 0
   # day_selection: default
@@ -57,5 +57,5 @@ optimiser:
   lr_gamma: 0.1
 
 dataset:
-  source_root: ./small-dataset/
-  save_root: ./sd-output/
+  source_root: ./data/
+  save_root: ./outputs/

@@ -338,7 +338,7 @@ def test_dataloader(train_loader):
 
 
 if __name__ == "__main__":
-    source_root = r"./small-dataset/"
+    source_root = r"./data/"
 
     dataset_train = sp_loc_dataset(source_root, dataset="geolife", data_type="train", previous_day=7)
     kwds_train = {"shuffle": False, "num_workers": 0, "batch_size": 2}
