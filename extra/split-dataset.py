@@ -18,7 +18,7 @@ unique_users = df['user_id'].unique()
 
 # Ensure there are at least 10,000 unique users in the dataset
 if len(unique_users) < 2720:
-    raise ValueError("The dataset does not contain enough users to create two batches of 5000 users.")
+    raise ValueError("The dataset does not contain enough users.")
 
 # Get the first 5000 and second 5000 unique users
 # batch1_users = unique_users[:23800]

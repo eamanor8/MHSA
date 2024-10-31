@@ -1,0 +1,3 @@
+Max location id:149, unique location id:148
+23 6 6
+Total number of trainable parameters:  641942
