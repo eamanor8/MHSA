@@ -1,10 +1,8 @@
 # Sensitive
 data/
 dblogin*
-# paths.json
 trained_models/
 outputs/
-sd-output/
 
 # Mac
 .DS_Store

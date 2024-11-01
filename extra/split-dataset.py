@@ -2,9 +2,9 @@ import pandas as pd
 from io import StringIO
 
 # Read and truncate the dataset to extract two batches of 5000 unique users
-input_file = './sd/gowalla/original-Gowalla_totalCheckins.txt'  # Path to the original file
-batch1_output_file = './sd/gowalla/Gowalla_totalCheckins.txt'  # Path to save the first 5000 users' data
-batch2_output_file = './sd/gowalla/test-dataset.txt'  # Path to save the second 5000 users' data
+input_file = './data/gowalla/original-Gowalla_totalCheckins.txt'  # Path to the original file
+batch1_output_file = './data/gowalla/Gowalla_totalCheckins.txt'  # Path to save the first 5000 users' data
+batch2_output_file = './data/gowalla/test-dataset.txt'  # Path to save the second 5000 users' data
 
 # Load the dataset
 with open(input_file, 'r') as infile:
@@ -21,10 +21,11 @@ if len(unique_users) < 2720:
     raise ValueError("The dataset does not contain enough users.")
 
 # Get the first 5000 and second 5000 unique users
-# batch1_users = unique_users[:23800]
-# batch2_users = unique_users[23800:81400]
-batch1_users = unique_users[:1000]
-batch2_users = unique_users[1000:2720]
+batch1_users = unique_users[:23800]
+batch2_users = unique_users[23800:81400]
+
+# batch1_users = unique_users[:1000]
+# batch2_users = unique_users[1000:2720]
 
 # Filter out the data for the two batches of users
 batch1_users_data = df[df['user_id'].isin(batch1_users)]

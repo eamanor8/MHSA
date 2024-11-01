@@ -1,3 +1,6 @@
+
+# after preprocessing the files saved from this script, we get 20 users who meet the criteria of filtering for both test and train
+
 def split_file(input_file):
     with open(input_file, 'r') as file:
         lines = file.readlines()

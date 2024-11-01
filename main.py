@@ -70,6 +70,8 @@ def main(rank, world_size, config, time_now):
         # save the conf
         log_dir = init_save_path(config, time_now, i)
 
+        # print(f"Running on rank: {rank} with config: {config}")
+
         res_single = single_run(train_loader, val_loader, test_loader, config, rank, log_dir)
 
         data = {"tensor": res_single}

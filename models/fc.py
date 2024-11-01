@@ -27,6 +27,9 @@ class FullyConnected(nn.Module):
             self.fc_dropout2 = nn.Dropout(p=config.fc_dropout)
 
     def forward(self, out, user) -> Tensor:
+        
+        # print("User input tensor values:", user)
+        # print("Max user ID:", user.max().item(), "Min user ID:", user.min().item())
 
         # with fc output
         if self.if_embed_user:

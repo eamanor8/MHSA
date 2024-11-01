@@ -1,5 +1,0 @@
-Test Dataset Preprocessing
-Max location id:3180, unique location id:3179
-Max location id:2504, unique location id:2503
-Max user id:315, unique user id:315
-Final user size:  315

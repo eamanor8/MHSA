@@ -36,8 +36,8 @@ class TransEncoder(nn.Module):
         seq_len = context_dict["len"]
 
         # positional encoding, dropout performed inside
-        src_mask = self._generate_square_subsequent_mask(src.shape[0]).to(device)
-        src_padding_mask = (src == 0).transpose(0, 1).to(device)
+        src_mask = self._generate_square_subsequent_mask(src.shape[0]).to(device).to(torch.bool)  # Convert to bool
+        src_padding_mask = (src == 0).transpose(0, 1).to(device).to(torch.bool)  # Convert to bool
         out = self.encoder(emb, mask=src_mask, src_key_padding_mask=src_padding_mask)
 
         # only take the last timestep

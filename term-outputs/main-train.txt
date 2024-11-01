@@ -1,0 +1,167 @@
+23 6 6
+Total number of trainable parameters:  650037
+Current learning rate:  0.0
+Epoch 1, 43.5%	 loss: 5.560 acc@1: 0.47 mrr: 3.21, ndcg: 2.52, took: 0.90s Epoch 1, 87.0%	 loss: 5.350 acc@1: 2.97 mrr: 6.96, ndcg: 7.00, took: 0.48s 
+Validation loss = 5.15 acc@1 = 3.98 f1 = 3.40 mrr = 8.07, ndcg = 8.02
+Validation loss decreased (inf --> 5.146036).  Saving model ...
+Current learning rate: 0.000500
+==================================================
+Epoch 2, 43.5%	 loss: 4.684 acc@1: 11.25 mrr: 17.14, ndcg: 17.72, took: 0.49s Epoch 2, 87.0%	 loss: 4.295 acc@1: 18.12 mrr: 25.82, ndcg: 27.82, took: 0.48s 
+Validation loss = 4.51 acc@1 = 15.06 f1 = 8.04 mrr = 21.69, ndcg = 23.13
+Validation loss decreased (5.146036 --> 4.508332).  Saving model ...
+Current learning rate: 0.001000
+==================================================
+Epoch 3, 43.5%	 loss: 3.564 acc@1: 26.25 mrr: 38.22, ndcg: 42.62, took: 0.49s Epoch 3, 87.0%	 loss: 3.359 acc@1: 25.62 mrr: 39.19, ndcg: 44.74, took: 0.49s 
+Validation loss = 3.97 acc@1 = 20.45 f1 = 10.92 mrr = 29.56, ndcg = 32.90
+Validation loss decreased (4.508332 --> 3.973836).  Saving model ...
+Current learning rate: 0.000979
+==================================================
+Epoch 4, 43.5%	 loss: 2.980 acc@1: 30.47 mrr: 45.78, ndcg: 52.85, took: 0.49s Epoch 4, 87.0%	 loss: 2.729 acc@1: 32.19 mrr: 47.67, ndcg: 54.38, took: 0.48s 
+Validation loss = 3.84 acc@1 = 17.61 f1 = 11.08 mrr = 28.77, ndcg = 32.26
+Validation loss decreased (3.973836 --> 3.837679).  Saving model ...
+Current learning rate: 0.000958
+==================================================
+Epoch 5, 43.5%	 loss: 2.578 acc@1: 34.53 mrr: 50.89, ndcg: 58.59, took: 0.49s Epoch 5, 87.0%	 loss: 2.549 acc@1: 36.56 mrr: 51.22, ndcg: 58.11, took: 0.49s 
+Validation loss = 3.74 acc@1 = 17.05 f1 = 10.20 mrr = 29.36, ndcg = 33.81
+Validation loss decreased (3.837679 --> 3.736479).  Saving model ...
+Current learning rate: 0.000937
+==================================================
+Epoch 6, 43.5%	 loss: 2.357 acc@1: 34.53 mrr: 52.11, ndcg: 60.17, took: 0.49s Epoch 6, 87.0%	 loss: 2.350 acc@1: 35.31 mrr: 52.44, ndcg: 60.64, took: 0.49s 
+Validation loss = 3.76 acc@1 = 15.34 f1 = 10.51 mrr = 27.16, ndcg = 31.58
+EarlyStopping counter: 1 out of 2
+Current learning rate: 0.000917
+==================================================
+Epoch 7, 43.5%	 loss: 2.148 acc@1: 44.38 mrr: 59.53, ndcg: 66.74, took: 0.49s Epoch 7, 87.0%	 loss: 2.192 acc@1: 40.16 mrr: 56.91, ndcg: 65.01, took: 0.48s 
+Validation loss = 3.81 acc@1 = 17.90 f1 = 13.59 mrr = 28.25, ndcg = 32.74
+EarlyStopping counter: 2 out of 2
+==================================================
+Early stopping
+Current learning rate: 0.000090
+==================================================
+Epoch 8, 43.5%	 loss: 2.360 acc@1: 37.34 mrr: 54.11, ndcg: 61.73, took: 0.49s Epoch 8, 87.0%	 loss: 2.286 acc@1: 37.50 mrr: 54.75, ndcg: 62.67, took: 0.50s 
+Validation loss = 3.70 acc@1 = 19.60 f1 = 12.60 mrr = 31.03, ndcg = 35.24
+Validation loss decreased (3.736479 --> 3.698923).  Saving model ...
+Current learning rate: 0.000090
+==================================================
+Epoch 9, 43.5%	 loss: 2.188 acc@1: 42.97 mrr: 58.81, ndcg: 66.22, took: 0.50s Epoch 9, 87.0%	 loss: 2.210 acc@1: 40.00 mrr: 56.78, ndcg: 64.37, took: 0.50s 
+Validation loss = 3.69 acc@1 = 19.89 f1 = 12.49 mrr = 31.20, ndcg = 35.24
+Validation loss decreased (3.698923 --> 3.689107).  Saving model ...
+Current learning rate: 0.000090
+==================================================
+Epoch 10, 43.5%	 loss: 2.235 acc@1: 41.56 mrr: 57.45, ndcg: 65.11, took: 0.50s Epoch 10, 87.0%	 loss: 2.257 acc@1: 41.72 mrr: 57.30, ndcg: 64.12, took: 0.50s 
+Validation loss = 3.69 acc@1 = 19.60 f1 = 12.18 mrr = 30.92, ndcg = 35.11
+Validation loss decreased (3.689107 --> 3.686544).  Saving model ...
+Current learning rate: 0.000090
+==================================================
+Epoch 11, 43.5%	 loss: 2.182 acc@1: 44.22 mrr: 60.33, ndcg: 67.24, took: 0.50s Epoch 11, 87.0%	 loss: 2.150 acc@1: 43.75 mrr: 59.69, ndcg: 66.90, took: 0.50s 
+Validation loss = 3.69 acc@1 = 19.89 f1 = 12.89 mrr = 30.99, ndcg = 35.32
+EarlyStopping counter: 1 out of 2
+Current learning rate: 0.000090
+==================================================
+Epoch 12, 43.5%	 loss: 2.134 acc@1: 42.19 mrr: 59.13, ndcg: 66.87, took: 0.50s Epoch 12, 87.0%	 loss: 2.164 acc@1: 42.81 mrr: 58.99, ndcg: 66.62, took: 0.50s 
+Validation loss = 3.70 acc@1 = 19.32 f1 = 12.52 mrr = 30.74, ndcg = 34.92
+EarlyStopping counter: 2 out of 2
+==================================================
+Early stopping
+Current learning rate: 0.000009
+==================================================
+Epoch 13, 43.5%	 loss: 2.117 acc@1: 45.00 mrr: 59.99, ndcg: 67.15, took: 0.49s Epoch 13, 87.0%	 loss: 2.149 acc@1: 43.75 mrr: 59.49, ndcg: 66.85, took: 0.49s 
+Validation loss = 3.68 acc@1 = 20.45 f1 = 12.76 mrr = 31.24, ndcg = 35.26
+Validation loss decreased (3.686544 --> 3.680819).  Saving model ...
+Current learning rate: 0.000009
+==================================================
+Epoch 14, 43.5%	 loss: 2.221 acc@1: 42.66 mrr: 58.15, ndcg: 65.42, took: 0.50s Epoch 14, 87.0%	 loss: 2.143 acc@1: 43.91 mrr: 59.91, ndcg: 67.42, took: 0.49s 
+Validation loss = 3.68 acc@1 = 20.45 f1 = 12.74 mrr = 31.28, ndcg = 35.22
+EarlyStopping counter: 1 out of 2
+Current learning rate: 0.000009
+==================================================
+Epoch 15, 43.5%	 loss: 2.160 acc@1: 42.81 mrr: 58.98, ndcg: 66.28, took: 0.49s Epoch 15, 87.0%	 loss: 2.176 acc@1: 42.66 mrr: 58.74, ndcg: 65.73, took: 0.50s 
+Validation loss = 3.68 acc@1 = 20.45 f1 = 12.94 mrr = 31.26, ndcg = 35.37
+EarlyStopping counter: 2 out of 2
+==================================================
+Early stopping
+Training finished.	 Time: 19.57s.	 acc@1: 20.45%
+acc@1 = 14.79 f1 = 9.00 mrr = 25.32 ndcg = 29.24
+[{'correct@1': 72.0, 'correct@3': 118.0, 'correct@5': 141.0, 'correct@10': 190.0, 'rr': 109.969, 'ndcg': 35.26478707790375, 'f1': 0.12761138910498193, 'total': 352.0, 'acc@1': 20.454545319080353, 'acc@5': 40.05681872367859, 'acc@10': 53.977274894714355, 'mrr': 31.241193413734436, 'type': 'vali'}, {'correct@1': 50.0, 'correct@3': 97.0, 'correct@5': 118.0, 'correct@10': 160.0, 'rr': 85.56688, 'ndcg': 29.2417973279953, 'f1': 0.089969838299786, 'total': 338.0, 'acc@1': 14.792899787425995, 'acc@5': 34.91124212741852, 'acc@10': 47.337278723716736, 'mrr': 25.315645337104797, 'type': 'test'}]
+23 6 6
+Total number of trainable parameters:  650037
+Current learning rate:  0.0
+Epoch 1, 43.5%	 loss: 5.656 acc@1: 0.47 mrr: 2.95, ndcg: 2.23, took: 0.50s Epoch 1, 87.0%	 loss: 5.421 acc@1: 2.19 mrr: 5.61, ndcg: 5.41, took: 0.49s 
+Validation loss = 5.17 acc@1 = 5.11 f1 = 4.65 mrr = 8.74, ndcg = 8.61
+Validation loss decreased (inf --> 5.165531).  Saving model ...
+Current learning rate: 0.000500
+==================================================
+Epoch 2, 43.5%	 loss: 4.736 acc@1: 11.56 mrr: 17.09, ndcg: 17.84, took: 0.49s Epoch 2, 87.0%	 loss: 4.233 acc@1: 16.88 mrr: 25.78, ndcg: 28.43, took: 0.49s 
+Validation loss = 4.45 acc@1 = 15.91 f1 = 8.03 mrr = 23.21, ndcg = 25.36
+Validation loss decreased (5.165531 --> 4.452694).  Saving model ...
+Current learning rate: 0.001000
+==================================================
+Epoch 3, 43.5%	 loss: 3.544 acc@1: 26.41 mrr: 38.18, ndcg: 42.55, took: 0.49s Epoch 3, 87.0%	 loss: 3.361 acc@1: 23.91 mrr: 38.24, ndcg: 44.31, took: 0.50s 
+Validation loss = 3.96 acc@1 = 19.03 f1 = 9.84 mrr = 28.21, ndcg = 30.92
+Validation loss decreased (4.452694 --> 3.956062).  Saving model ...
+Current learning rate: 0.000979
+==================================================
+Epoch 4, 43.5%	 loss: 3.028 acc@1: 30.00 mrr: 43.96, ndcg: 50.27, took: 0.50s Epoch 4, 87.0%	 loss: 2.781 acc@1: 29.38 mrr: 45.50, ndcg: 52.53, took: 0.50s 
+Validation loss = 3.77 acc@1 = 18.18 f1 = 11.14 mrr = 29.20, ndcg = 32.78
+Validation loss decreased (3.956062 --> 3.767463).  Saving model ...
+Current learning rate: 0.000958
+==================================================
+Epoch 5, 43.5%	 loss: 2.566 acc@1: 34.84 mrr: 50.59, ndcg: 57.73, took: 0.49s Epoch 5, 87.0%	 loss: 2.607 acc@1: 33.28 mrr: 49.63, ndcg: 57.55, took: 0.49s 
+Validation loss = 3.72 acc@1 = 17.33 f1 = 11.17 mrr = 28.53, ndcg = 32.71
+Validation loss decreased (3.767463 --> 3.723889).  Saving model ...
+Current learning rate: 0.000937
+==================================================
+Epoch 6, 43.5%	 loss: 2.384 acc@1: 35.78 mrr: 53.37, ndcg: 61.13, took: 0.49s Epoch 6, 87.0%	 loss: 2.329 acc@1: 36.72 mrr: 53.37, ndcg: 61.13, took: 0.49s 
+Validation loss = 3.69 acc@1 = 19.03 f1 = 13.89 mrr = 30.33, ndcg = 34.56
+Validation loss decreased (3.723889 --> 3.691516).  Saving model ...
+Current learning rate: 0.000917
+==================================================
+Epoch 7, 43.5%	 loss: 2.176 acc@1: 41.72 mrr: 58.14, ndcg: 65.64, took: 0.49s Epoch 7, 87.0%	 loss: 2.207 acc@1: 40.00 mrr: 56.28, ndcg: 64.32, took: 0.49s 
+Validation loss = 3.72 acc@1 = 16.48 f1 = 13.67 mrr = 28.46, ndcg = 32.97
+EarlyStopping counter: 1 out of 2
+Current learning rate: 0.000896
+==================================================
+Epoch 8, 43.5%	 loss: 2.008 acc@1: 46.88 mrr: 63.03, ndcg: 70.10, took: 0.49s Epoch 8, 87.0%	 loss: 2.022 acc@1: 46.09 mrr: 61.46, ndcg: 68.82, took: 0.49s 
+Validation loss = 3.74 acc@1 = 21.02 f1 = 13.76 mrr = 31.48, ndcg = 35.59
+EarlyStopping counter: 2 out of 2
+==================================================
+Early stopping
+Current learning rate: 0.000088
+==================================================
+Epoch 9, 43.5%	 loss: 2.147 acc@1: 42.03 mrr: 59.18, ndcg: 66.68, took: 0.49s Epoch 9, 87.0%	 loss: 2.129 acc@1: 44.22 mrr: 60.55, ndcg: 67.86, took: 0.49s 
+Validation loss = 3.66 acc@1 = 20.45 f1 = 13.90 mrr = 31.52, ndcg = 35.39
+Validation loss decreased (3.691516 --> 3.662326).  Saving model ...
+Current learning rate: 0.000088
+==================================================
+Epoch 10, 43.5%	 loss: 2.135 acc@1: 41.25 mrr: 58.55, ndcg: 66.60, took: 0.49s Epoch 10, 87.0%	 loss: 2.097 acc@1: 45.00 mrr: 61.09, ndcg: 68.34, took: 0.49s 
+Validation loss = 3.67 acc@1 = 18.75 f1 = 13.18 mrr = 30.55, ndcg = 34.63
+EarlyStopping counter: 1 out of 2
+Current learning rate: 0.000088
+==================================================
+Epoch 11, 43.5%	 loss: 2.056 acc@1: 42.19 mrr: 60.07, ndcg: 67.61, took: 0.48s Epoch 11, 87.0%	 loss: 2.038 acc@1: 43.75 mrr: 59.96, ndcg: 67.77, took: 0.49s 
+Validation loss = 3.66 acc@1 = 18.75 f1 = 13.34 mrr = 30.71, ndcg = 34.92
+EarlyStopping counter: 2 out of 2
+==================================================
+Early stopping
+Current learning rate: 0.000009
+==================================================
+Epoch 12, 43.5%	 loss: 2.132 acc@1: 42.66 mrr: 59.32, ndcg: 67.17, took: 0.49s Epoch 12, 87.0%	 loss: 2.085 acc@1: 43.44 mrr: 60.25, ndcg: 68.00, took: 0.49s 
+Validation loss = 3.66 acc@1 = 20.74 f1 = 14.18 mrr = 31.61, ndcg = 35.53
+EarlyStopping counter: 1 out of 2
+Current learning rate: 0.000009
+==================================================
+Epoch 13, 43.5%	 loss: 2.026 acc@1: 45.16 mrr: 61.95, ndcg: 69.23, took: 0.48s Epoch 13, 87.0%	 loss: 2.069 acc@1: 45.78 mrr: 61.34, ndcg: 68.42, took: 0.49s 
+Validation loss = 3.66 acc@1 = 20.45 f1 = 14.15 mrr = 31.52, ndcg = 35.54
+EarlyStopping counter: 2 out of 2
+==================================================
+Early stopping
+Training finished.	 Time: 16.46s.	 acc@1: 20.45%
+acc@1 = 14.50 f1 = 8.55 mrr = 24.95 ndcg = 28.60
+[{'correct@1': 72.0, 'correct@3': 124.0, 'correct@5': 149.0, 'correct@10': 189.0, 'rr': 110.93376, 'ndcg': 35.3859543800354, 'f1': 0.13895379470467348, 'total': 352.0, 'acc@1': 20.454545319080353, 'acc@5': 42.32954680919647, 'acc@10': 53.69318127632141, 'mrr': 31.515273451805115, 'type': 'vali'}, {'correct@1': 49.0, 'correct@3': 93.0, 'correct@5': 110.0, 'correct@10': 156.0, 'rr': 84.33442, 'ndcg': 28.598788380622864, 'f1': 0.08551305948724708, 'total': 338.0, 'acc@1': 14.497041702270508, 'acc@5': 32.54437744617462, 'acc@10': 46.15384638309479, 'mrr': 24.951010942459106, 'type': 'test'}]
+   correct@1  correct@3  correct@5  ...     acc@10        mrr  type
+0       72.0      118.0      141.0  ...  53.977275  31.241193  vali
+1       50.0       97.0      118.0  ...  47.337279  25.315645  test
+2       72.0      124.0      149.0  ...  53.693181  31.515273  vali
+3       49.0       93.0      110.0  ...  46.153846  24.951011  test
+
+[4 rows x 13 columns]

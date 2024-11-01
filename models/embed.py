@@ -145,11 +145,11 @@ class AllEmbedding(nn.Module):
             self.dropout = nn.Dropout(0.1)
 
     def forward(self, src, context_dict) -> Tensor:
-        emb = self.emb_loc(src)
+        emb = self.emb_loc(src) # torch.Size([29, 64, 128])
 
         if self.if_include_time:
             if self.emb_type == "add":
-                emb = emb + self.temporal_embedding(context_dict["time"], context_dict["weekday"])
+                emb = emb + self.temporal_embedding(context_dict["time"], context_dict["weekday"]) # emb: torch.Size([29, 64, 128]), temp: hour Embedding(24, 128), min** Embedding(4, 128) loc Embedding(149, 128)
             else:
                 emb = torch.cat([emb, self.temporal_embedding(context_dict["time"], context_dict["weekday"])], dim=-1)
 

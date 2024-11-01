@@ -6,8 +6,8 @@ misc:
   # # 10560 users, ranging from 1 to 10560
   # total_user_num: 10561
   
-  total_loc_num: 150
-  total_user_num: 20
+  total_loc_num: 181
+  total_user_num: 21
 
   # 
   if_embed_user: True
