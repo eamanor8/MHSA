@@ -2,6 +2,6 @@ run main-ex:
     python main-ex.py config/gowalla/transformer.yml --excluded_users_file "./data/gowalla/100-excluded-users.txt" --model_path "saved-models/checkpoint.pt"
 
 run main-5k:
-    python main-5k.py config/gowalla/5k-transformer.yml --model_path trained_models/checkpoint.pt | tee terminal-outputs/5k-test.txt
+    python main-5k.py --model_path trained_models/checkpoint.pt | tee term-outputs/testing.txt
 
     

@@ -61,11 +61,11 @@ def analyze_results():
 
     # Calculate the difference and percentage improvement
     df_metrics['Difference'] = df_metrics['Experimental'] - df_metrics['Benchmark']
-    df_metrics['Percentage Improvement'] = (df_metrics['Difference'] / df_metrics['Benchmark']) * 100
+    # df_metrics['Percentage Improvement'] = (df_metrics['Difference'] / df_metrics['Benchmark']) * 100
 
     # Plot comparison and percentage difference
     plot_comparison(df_metrics)
-    plot_percentage_difference(df_metrics)
+    # plot_percentage_difference(df_metrics)
 
 if __name__ == "__main__":
     analyze_results()

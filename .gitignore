@@ -3,6 +3,8 @@ data/
 dblogin*
 trained_models/
 outputs/
+data_copy/
+term-outputs_copy/
 
 # Mac
 .DS_Store

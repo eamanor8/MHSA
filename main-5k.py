@@ -105,7 +105,7 @@ if __name__ == "__main__":
     # load configs
     parser = argparse.ArgumentParser()
     parser.add_argument("config", type=str, nargs="?", help="Config file path.", default="config/gowalla/transformer.yml")
-    parser.add_argument("--model_path", type=str, help="Path to the pre-trained model", required=True)
+    parser.add_argument("--model_path", type=str, help="Path to the pre-trained model",  default="trained_models/checkpoint.pt")
     args = parser.parse_args()
 
     config = load_config(args.config)
