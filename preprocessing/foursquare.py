@@ -3,6 +3,7 @@ import numpy as np
 from sklearn.preprocessing import OrdinalEncoder
 import os
 import json
+import chardet
 
 from joblib import Parallel, delayed
 
@@ -30,12 +31,18 @@ def _get_time(df):
 
 def enrich_time_info(sp):
     tqdm.pandas(desc="Time enriching")
+
+    # Apply the parallel processing function
     sp = applyParallelPD(sp.groupby("user_id", group_keys=False), _get_time, n_jobs=-1, print_progress=True)
+
+    # Drop columns not needed for further processing
     #     sp.groupby("user_id", group_keys=False).progress_apply(_get_time)
     sp.drop(columns={"started_at", "offset", "UTC", "name", "category"}, inplace=True)
     sp.sort_values(by=["user_id", "start_day", "start_min"], inplace=True)
     sp = sp.reset_index(drop=True)
 
+    # Filter rows where 'user_id' can be converted to int, then convert
+    sp = sp[pd.to_numeric(sp["user_id"], errors="coerce").notna()]  # Filter rows where 'user_id' can be converted to int
     # sp["location_id"] = sp["location_id"].astype(int)
     sp["user_id"] = sp["user_id"].astype(int)
 
@@ -53,6 +60,7 @@ def get_dataset(config):
         header=None,
         parse_dates=[-1],
         names=["user_id", "location_id", "category", "name", "latitude", "longitude", "offset", "UTC"],
+        encoding='ISO-8859-1'
     )
     foursquare["started_at"] = foursquare["UTC"] + pd.to_timedelta(foursquare["offset"], unit="m")
 
@@ -110,6 +118,8 @@ def get_dataset(config):
 
     train_data, vali_data, test_data = split_dataset(foursquare_afterUser)
 
+    # foursquare_afterUser = test_data # for testing when using TKY data
+
     # encode unseen locations in validation and test into 0
     enc = OrdinalEncoder(dtype=np.int64, handle_unknown="use_encoded_value", unknown_value=-1).fit(
         train_data["location_id"].values.reshape(-1, 1)
@@ -153,7 +163,7 @@ def get_dataset(config):
     data_path = f"./data/valid_ids_foursquare.pk"
     with open(data_path, "wb") as handle:
         pickle.dump(final_valid_id, handle, protocol=pickle.HIGHEST_PROTOCOL)
-    foursquare_afterUser.to_csv(f"./data/dataSet_foursquare.csv", index=False)
+    foursquare_afterUser.to_csv(f"./data/dataset_foursquare.csv", index=False)
     foursquare_loc.to_csv(f"./data/locations_foursquare.csv", index=False)
 
     print("Final user size: ", foursquare_afterUser["user_id"].unique().shape[0])

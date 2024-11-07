@@ -173,6 +173,21 @@ def _filter_user(df, min_thres, mean_thres):
 
 def _get_tracking_quality(df, window_size):
 
+    """
+    Calculate tracking quality for a given user.
+
+    Parameters
+    ----------
+    df : pd.DataFrame
+        Dataframe containing the staypoints and trips of a user.
+    window_size : int
+        The window size for the sliding window.
+
+    Returns
+    -------
+    pd.DataFrame
+        Dataframe with the tracking quality for each week.
+    """
     weeks = (df["finished_at"].max() - df["started_at"].min()).days // 7
     start_date = df["started_at"].min().date()
 
@@ -196,7 +211,7 @@ def _get_tracking_quality(df, window_size):
 
 def split_dataset(totalData):
     """Split dataset into train, vali and test."""
-    totalData = totalData.groupby("user_id",group_keys=False).apply(_get_split_days_user)
+    totalData = totalData.groupby("user_id",group_keys=False).apply(_get_split_days_user) # original
 
     train_data = totalData.loc[totalData["Dataset"] == "train"].copy()
     vali_data = totalData.loc[totalData["Dataset"] == "vali"].copy()

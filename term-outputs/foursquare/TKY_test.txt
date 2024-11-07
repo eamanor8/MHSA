@@ -1,0 +1,8 @@
+189 45 48
+Total number of trainable parameters:  1915626
+acc@1 = 21.30 f1 = 15.55 mrr = 33.42 ndcg = 38.97
+[{'correct@1': 2586.0, 'correct@3': 4765.0, 'correct@5': 5822.0, 'correct@10': 7171.0, 'rr': 4057.1245, 'ndcg': 38.973626494407654, 'f1': 0.15554879552739806, 'total': 12141.0, 'acc@1': 21.299728751182556, 'acc@5': 47.95321524143219, 'acc@10': 59.06432867050171, 'mrr': 33.41672420501709, 'type': 'test'}]
+   correct@1  correct@3  correct@5  ...     acc@10        mrr  type
+0     2586.0     4765.0     5822.0  ...  59.064329  33.416724  test
+
+[1 rows x 13 columns]

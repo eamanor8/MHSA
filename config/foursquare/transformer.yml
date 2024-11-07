@@ -6,7 +6,7 @@ misc:
   # 535 users, ranging from 1 to 535
   total_user_num: 536
 
-  # 
+  #
   if_embed_user: True
   if_embed_poi: False
   if_embed_time: True
