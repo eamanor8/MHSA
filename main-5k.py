@@ -25,6 +25,7 @@ def test_only(test_loader, config, device, log_dir, model_path):
     model.to(device)
 
     # Test
+    
     perf, test_df = get_test_result(config, model, test_loader, device)
     test_df.to_csv(os.path.join(log_dir, "user_detail.csv"))
 
@@ -105,7 +106,7 @@ if __name__ == "__main__":
     # load configs
     parser = argparse.ArgumentParser()
     parser.add_argument("config", type=str, nargs="?", help="Config file path.", default="config/gowalla/transformer.yml")
-    parser.add_argument("--model_path", type=str, help="Path to the pre-trained model",  default="trained_models/foursquare/checkpoint.pt")
+    parser.add_argument("--model_path", type=str, help="Path to the pre-trained model",  default="trained_models/1day/checkpoint.pt")
     args = parser.parse_args()
 
     config = load_config(args.config)

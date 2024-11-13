@@ -55,7 +55,7 @@ def enrich_time_info(sp):
 def get_dataset(config):
     # note: location does not start at 0
     foursquare = pd.read_csv(
-        os.path.join(config[f"raw_foursquare"], "dataset_TSMC2014_NYC.txt"),
+        os.path.join(config[f"raw_foursquare"], "dataset_TSMC2014_TKY.txt"),
         sep="\t",
         header=None,
         parse_dates=[-1],
@@ -95,9 +95,9 @@ def get_dataset(config):
     all_ids = foursquare_enriched[["id"]].copy()
 
     # for each previous_day, get the valid staypoint id
-    valid_ids = get_valid_sequence(train_data, previous_day=7)
-    valid_ids.extend(get_valid_sequence(vali_data, previous_day=7))
-    valid_ids.extend(get_valid_sequence(test_data, previous_day=7))
+    valid_ids = get_valid_sequence(train_data, previous_day=1) # changed previous_day from 7 to 3
+    valid_ids.extend(get_valid_sequence(vali_data, previous_day=1))
+    valid_ids.extend(get_valid_sequence(test_data, previous_day=1))
 
     all_ids["7"] = 0
     all_ids.loc[all_ids["id"].isin(valid_ids), f"7"] = 1

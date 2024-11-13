@@ -1,10 +1,22 @@
 misc:
   dataset: foursquare
   # 3816 known locations, ranging from 2 to 3817
-  total_loc_num: 3818
+  total_loc_num: #3818
 
   # 535 users, ranging from 1 to 535
-  total_user_num: 536
+  total_user_num: #536
+
+  # # 3days
+  #  total_loc_num: 3602
+  #  total_user_num: 699
+
+  # # 2days
+  # total_loc_num: 3463
+  # total_user_num: 676
+
+  # # # 1days
+  # total_loc_num: 3135
+  # total_user_num: 612
 
   #
   if_embed_user: True
@@ -13,7 +25,7 @@ misc:
   if_embed_duration: False
 
   # how many days in the past we consider
-  previous_day: 7
+  previous_day: 7 #7
   verbose: True
   debug: False
   batch_size: 256
@@ -55,4 +67,4 @@ optimiser:
 
 dataset:
   source_root: ./data/
-  save_root: ./outputs/
+  save_root: ./outputs/ #./prev_outputs/1day/

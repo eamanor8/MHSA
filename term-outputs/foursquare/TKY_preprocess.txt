@@ -1,4 +1,0 @@
-Max location id:2277, unique location id:2276
-Max location id:1958, unique location id:1957
-Max user id:536, unique user id:536
-Final user size:  536
